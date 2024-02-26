@@ -1,4 +1,9 @@
 <div class="container mt-3">
+  <div class="row">
+    <div class="col-6">
+      <?php Flasher::flash();?>
+    </div>
+  </div>
     <div class="row">
         <div class="col-6">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
@@ -14,9 +19,10 @@
                  <<ul class="list-group"> 
                     <li class="list-group-item disabled" aria-disabled="true">Daftar Pesan tiket</li>
                     <?php foreach ($data['pemesanan'] as $table ) : ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <?= $table['namaLengkap'] ?>
-                         <a href="<?= BASEURL; ?>/Tiket/detail/<?= $table['id']; ?>" class="badge text-bg-primary "> detail</a>
+                    <li class="list-group-item ">
+                    Dipesan Oleh : <?= $table['namaLengkap'] ?>
+                    <a onclick="return confirm('apakah anda yakin?')" href="<?= BASEURL; ?>/Tiket/hapus/<?= $table['id']; ?>" class="badge text-bg-danger float-end ms-1 "> hapus</a>
+                    <a href="<?= BASEURL; ?>/Tiket/detail/<?= $table['id']; ?>" class="badge text-bg-primary float-end ms-1"> detail</a>
                     </li>
                     <?php endforeach;?>
                 </ul>
@@ -44,12 +50,12 @@
 
           <div class="form-group">
             <label for="nomor_identitas">Nomor identitas</label>
-            <input type="text" class="form-control" id="nomor_identitas" name="nomor_identitas" autocomplete="off">
+            <input type="number" class="form-control" id="nomor_identitas" name="nomor_identitas" autocomplete="off">
           </div>
 
           <div class="form-group">
             <label for="no_hp">no Hp</label>
-            <input type="text" class="form-control" id="no_hp" name="no_hp">
+            <input type="number" class="form-control" id="no_hp" name="no_hp">
           </div>
 
           <div class="form-group">
@@ -66,11 +72,11 @@
           </div>
           <div class="form-group">
             <label for="jumlah_penumpang">jumlah penumpang</label>
-            <input type="text" class="form-control" id="jumlah_penumpang" name="jumlah_penumpang">
+            <input type="number" class="form-control" id="jumlah_penumpang" name="jumlah_penumpang">
           </div>
           <div class="form-group">
             <label for="jumlah_lansia">jumlah penumpang lansia</label>
-            <input type="text" class="form-control" id="jumlah_lansia" name="jumlah_lansia">
+            <input type="number" class="form-control" id="jumlah_lansia" name="jumlah_lansia">
           </div>
       </div>
       <div class="modal-footer">

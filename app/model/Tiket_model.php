@@ -41,6 +41,12 @@ class Tiket_model {
         return $this->db->rowCount();
     }
    
-        
+        public function HapusTiketSaya($id){
+            $query = "DELETE FROM pemesanan WHERE id = :id";
+            $this->db->query($query);
+            $this->db->bind('id', $id);
+            $this->db->execute();
+            return $this->db->rowCount();
+        }
     }
 

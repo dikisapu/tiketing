@@ -19,6 +19,23 @@ class Tiket extends controller{
     public function tambah()
     {
         if( $this->model('Tiket_model')->tambahTiketSaya($_POST) > 0 ) {
+            Flasher::setFlash('berhasil', 'di Checkout', 'success');
+            header('Location: ' . BASEURL . '/Tiket');
+            exit;
+        }else{
+            Flasher::setFlash('gagal', 'di Checkout', 'danger');
+            header('Location: ' . BASEURL . '/Tiket');
+            exit;
+        }
+    }
+    public function hapus($id)
+    {
+        if( $this->model('Tiket_model')->HapusTiketSaya($id) > 0 ) {
+            Flasher::setFlash('berhasil', 'di Hapus', 'success');
+            header('Location: ' . BASEURL . '/Tiket');
+            exit;
+        }else{
+            Flasher::setFlash('gagal', 'di Gagal', 'danger');
             header('Location: ' . BASEURL . '/Tiket');
             exit;
         }
