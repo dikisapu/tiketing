@@ -28,4 +28,5 @@ Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi saya m
 
 Terima kasih telah menggunakan aplikasi web tiket bus ini! Semoga perjalanan Anda menyenangkan. 🚌✨
 
-disclamer: Aplikasi ini Hasil Murni Dari Buatan saya sendiri tanpa template untuk fitur menghitung memang belum bisa dilakukan karena keterbatasan pengetahuan saya tentang pemograman tapi seiring berjalannya waktu akan saya tambahkan, anda bisa melihat bisa digithub saya (dikysan), saya yakin ketika kita sungguh-sungguh belajar kita bisa melakukan apapun.
+disclamer: 
+Aplikasi ini Hasil Murni Dari Buatan saya sendiri tanpa template untuk fitur search memang belum bisa dilakukan karena keterbatasan pengetahuan saya tentang pemograman tapi seiring berjalannya waktu akan saya tambahkan, anda bisa melihat bisa digithub saya (dikysan), saya yakin ketika kita sungguh-sungguh belajar kita bisa melakukan apapun yang kita mau stay Hungry Stay Foolish.
