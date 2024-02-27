@@ -1,0 +1,25 @@
+.footer {
+    background-color: #007bff; /* Warna biru */
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer p,
+  .footer a {
+    color: #fff; /* Warna teks putih */
+  }
+  .justify{
+    text-align: justify;
+  }
+
+  .bar:{
+    color: white;
+    border-radius: 50px;
+  }
+  .bar:hover{
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+  }

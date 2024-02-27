@@ -2,6 +2,7 @@
 // var_dump($_POST);   
 class Tiket extends controller{
 
+    // method index untuk menampilkan data pemesanan
     public function index(){
         $data['judul']='Junior Web Developer';
         $data['pemesanan'] = $this->model('Tiket_model')->getAllTiket();
@@ -9,6 +10,7 @@ class Tiket extends controller{
         $this->view('Tiket/index',$data);
         $this->view('template/footer');
     }
+    // method detail untuk menampilkan data pemesanan 
     public function detail($id){
         $data['judul']='Detail Tiket saya';
         $data['pemesanan'] = $this->model('Tiket_model')->getTiketByID($id);
@@ -16,6 +18,7 @@ class Tiket extends controller{
         $this->view('Tiket/detail',$data);
         $this->view('template/footer');
     }
+    // method checkout untuk menambah data pemesanan
     public function tambah()
     {
         if( $this->model('Tiket_model')->tambahTiketSaya($_POST) > 0 ) {
@@ -28,6 +31,8 @@ class Tiket extends controller{
             exit;
         }
     }
+
+    // method hapus untuk menghapus data pemesanan
     public function hapus($id)
     {
         if( $this->model('Tiket_model')->HapusTiketSaya($id) > 0 ) {

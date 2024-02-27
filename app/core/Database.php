@@ -1,6 +1,7 @@
 <?php 
 
 class Database {
+    // isi property dengan database yang sudah didefinisikan
     private $host = DB_HOST;
     private $user = DB_USER;
     private $pass = DB_PASS;
@@ -9,6 +10,8 @@ class Database {
     private $dbh;
     private $stmt;
 
+
+    // konstruktor  PDO database
     public function __construct(){
         // data source name
         $dsn='mysql:host=' . $this->host . ';dbname=' . $this->db_name;

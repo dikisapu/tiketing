@@ -25,18 +25,21 @@
         <div class="col-lg-4 card">
             <div><img class="img-fluid" src="<?= BASEURL; ?>/img/puspajaya3.jpg" alt=""></div>
             <h2>Puspajaya Kelas Ekonomi</h2>
+            <h3 class="text-center"> RP. 200000 </h3>
             <p class="justify">Suatu hari, sekelompok mahasiswa dari luar kota tiba di Bandar Lampung. Mereka datang untuk menjelajahi destinasi wisata alam Lampung yang terkenal. Dengan semangat yang membara, mereka memutuskan untuk menyewa bus pariwisata Puspajaya untuk mengantar mereka menjelajahi keindahan alam Lampung.</p>
             <a href="<?= BASEURL; ?>/tiket" class="btn btn-primary mt-2">Beli Tiket Sekarang</a>
          </div>
         <div class="col-lg-4 card">
             <div><img class="img-fluid" src="<?= BASEURL; ?>/img/puspajaya2.jpg" alt=""></div>
             <h2>Puspajaya Kelas <?= $bus1[1] ?></h2>
+            <h3 class="text-center"> RP. 240000 </h3>
             <p class="justify">Suatu hari, sekelompok mahasiswa dari luar kota tiba di Bandar Lampung. Mereka datang untuk menjelajahi destinasi wisata alam Lampung yang terkenal. Dengan semangat yang membara, mereka memutuskan untuk menyewa bus pariwisata Puspajaya untuk mengantar mereka menjelajahi keindahan alam Lampung.</p>
-            <a href="<?= BASEURL; ?>/tiket" class="btn btn-primary mt-2">Beli Tiket Sekarang</a>
+            <a href="<?= BASEURL; ?>/tiket" class="btn btn-primary mt-2 mb-5">Beli Tiket Sekarang</a>
          </div>
         <div class="col-lg-4 card">
             <div><img class="img-fluid" src="<?= BASEURL; ?>/img/puspajaya4.jpg" alt=""></div>
             <h2>Puspajaya Kelas <?= $bus1[2] ?></h2>
+            <h3 class="text-center"> RP. 300000 </h3>
             <p class="justify">
             Suatu hari, sekelompok mahasiswa dari luar kota tiba di Bandar Lampung. Mereka datang untuk menjelajahi destinasi wisata alam Lampung yang terkenal. Dengan semangat yang membara, mereka memutuskan untuk menyewa bus pariwisata Puspajaya untuk mengantar mereka menjelajahi keindahan alam Lampung.
             </p>

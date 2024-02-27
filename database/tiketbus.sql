@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 24 Feb 2024 pada 18.18
+-- Waktu pembuatan: 27 Feb 2024 pada 04.56
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.0.28
 
@@ -35,22 +35,19 @@ CREATE TABLE `pemesanan` (
   `kelasPenumpang` varchar(50) NOT NULL,
   `jadwal_keberangkatan` date NOT NULL,
   `jumlah_penumpang` varchar(25) NOT NULL,
-  `jumlah_lansia` varchar(25) NOT NULL
+  `jumlah_lansia` varchar(25) NOT NULL,
+  `Total_harga` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `pemesanan`
 --
 
-INSERT INTO `pemesanan` (`id`, `namaLengkap`, `nomor_identitas`, `No_hp`, `kelasPenumpang`, `jadwal_keberangkatan`, `jumlah_penumpang`, `jumlah_lansia`) VALUES
-(1, 'Diki Santoso', '1801180118011801', '089527575681', 'ekonomi', '2024-02-01', '10', '1'),
-(2, 'Elza Widya Sari', '180218021802', '089527575688', 'ekslusif', '2024-02-01', '10', '1'),
-(3, 'dsfad', '1231892398', '9231923', 'Ekonomi', '2025-10-28', '1', '1'),
-(4, 'Dini Pratiwi', 'diki', 'di', 'Ekonomi', '2024-10-28', '1', '1'),
-(5, 'diki', '28182', '23123', 'Ekonomi', '2024-10-28', '1', '28'),
-(6, 'asuu', 'mantab', '892388', 'Ekonomi', '2024-10-28', '2', '2'),
-(7, 'asu', '213123', '123', 'Ekonomi', '2023-12-28', '10', '2'),
-(8, 'mantab', 'esdf', 'sdf', 'Ekonomi', '2024-10-28', '1', '1');
+INSERT INTO `pemesanan` (`id`, `namaLengkap`, `nomor_identitas`, `No_hp`, `kelasPenumpang`, `jadwal_keberangkatan`, `jumlah_penumpang`, `jumlah_lansia`, `Total_harga`) VALUES
+(1, 'Diki Santoso', '1801180118011801', '089527575681', 'ekonomi', '2024-02-01', '10', '1', '0'),
+(25, 'Elza Widya Sari', '2123010019', '08233129', 'Ekonomi', '2024-10-28', '1', '1', '18000'),
+(26, 'Pipit', '13123123', '231231', 'Ekonomi', '2025-10-28', '2', '2', '36000'),
+(27, 'Ahsanul', '231231', '19301293', 'Ekonomi', '2024-10-28', '1', '1', '18000');
 
 --
 -- Indexes for dumped tables
@@ -70,7 +67,7 @@ ALTER TABLE `pemesanan`
 -- AUTO_INCREMENT untuk tabel `pemesanan`
 --
 ALTER TABLE `pemesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
